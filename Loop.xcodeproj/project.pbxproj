@@ -9,27 +9,31 @@
 /* Begin PBXBuildFile section */
 		9BC544A228FE80CF005F39BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544A128FE80CF005F39BE /* AppDelegate.swift */; };
 		9BC544A428FE80CF005F39BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544A328FE80CF005F39BE /* SceneDelegate.swift */; };
-		9BC544A628FE80CF005F39BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544A528FE80CF005F39BE /* ViewController.swift */; };
+		9BC544A628FE80CF005F39BE /* ExploreMoviesHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544A528FE80CF005F39BE /* ExploreMoviesHomeViewController.swift */; };
 		9BC544A928FE80CF005F39BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC544A728FE80CF005F39BE /* Main.storyboard */; };
 		9BC544AB28FE80D1005F39BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC544AA28FE80D1005F39BE /* Assets.xcassets */; };
 		9BC544AE28FE80D1005F39BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC544AC28FE80D1005F39BE /* LaunchScreen.storyboard */; };
 		9BC544BB28FE81BC005F39BE /* movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BC544BA28FE81BC005F39BE /* movies.json */; };
 		9BC544BD28FE81FE005F39BE /* staff_picks.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BC544BC28FE81FE005F39BE /* staff_picks.json */; };
-		9BC544C128FE84AF005F39BE /* StaffPicksModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544C028FE84AF005F39BE /* StaffPicksModel.swift */; };
+		9BC544C128FE84AF005F39BE /* MoviesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544C028FE84AF005F39BE /* MoviesModel.swift */; };
+		9BC544C328FE8D83005F39BE /* StaffpickModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544C228FE8D83005F39BE /* StaffpickModel.swift */; };
+		9BC544C728FE9108005F39BE /* LoopColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BC544C628FE9108005F39BE /* LoopColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9BC5449E28FE80CF005F39BE /* Loop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC544A128FE80CF005F39BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BC544A328FE80CF005F39BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9BC544A528FE80CF005F39BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9BC544A528FE80CF005F39BE /* ExploreMoviesHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreMoviesHomeViewController.swift; sourceTree = "<group>"; };
 		9BC544A828FE80CF005F39BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9BC544AA28FE80D1005F39BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BC544AD28FE80D1005F39BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BC544AF28FE80D1005F39BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BC544BA28FE81BC005F39BE /* movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = movies.json; sourceTree = "<group>"; };
 		9BC544BC28FE81FE005F39BE /* staff_picks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = staff_picks.json; sourceTree = "<group>"; };
-		9BC544C028FE84AF005F39BE /* StaffPicksModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffPicksModel.swift; sourceTree = "<group>"; };
+		9BC544C028FE84AF005F39BE /* MoviesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesModel.swift; sourceTree = "<group>"; };
+		9BC544C228FE8D83005F39BE /* StaffpickModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffpickModel.swift; sourceTree = "<group>"; };
+		9BC544C628FE9108005F39BE /* LoopColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoopColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +82,8 @@
 		9BC544B528FE80F4005F39BE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				9BC544B928FE812A005F39BE /* JSON Resource */,
+				9BC544B928FE812A005F39BE /* JSON */,
+				9BC544C628FE9108005F39BE /* LoopColors.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -86,7 +91,8 @@
 		9BC544B628FE80FC005F39BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9BC544C028FE84AF005F39BE /* StaffPicksModel.swift */,
+				9BC544C028FE84AF005F39BE /* MoviesModel.swift */,
+				9BC544C228FE8D83005F39BE /* StaffpickModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -94,8 +100,8 @@
 		9BC544B728FE8104005F39BE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9BC544AC28FE80D1005F39BE /* LaunchScreen.storyboard */,
-				9BC544A728FE80CF005F39BE /* Main.storyboard */,
+				9BC544C528FE8EC7005F39BE /* Storboard */,
+				9BC544C428FE8EBF005F39BE /* Launch */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -103,18 +109,18 @@
 		9BC544B828FE8109005F39BE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9BC544A528FE80CF005F39BE /* ViewController.swift */,
+				9BC544A528FE80CF005F39BE /* ExploreMoviesHomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		9BC544B928FE812A005F39BE /* JSON Resource */ = {
+		9BC544B928FE812A005F39BE /* JSON */ = {
 			isa = PBXGroup;
 			children = (
 				9BC544BA28FE81BC005F39BE /* movies.json */,
 				9BC544BC28FE81FE005F39BE /* staff_picks.json */,
 			);
-			path = "JSON Resource";
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		9BC544BF28FE8472005F39BE /* ViewModels */ = {
@@ -122,6 +128,22 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9BC544C428FE8EBF005F39BE /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				9BC544AC28FE80D1005F39BE /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		9BC544C528FE8EC7005F39BE /* Storboard */ = {
+			isa = PBXGroup;
+			children = (
+				9BC544A728FE80CF005F39BE /* Main.storyboard */,
+			);
+			name = Storboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,10 +219,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC544A628FE80CF005F39BE /* ViewController.swift in Sources */,
+				9BC544C328FE8D83005F39BE /* StaffpickModel.swift in Sources */,
+				9BC544C728FE9108005F39BE /* LoopColors.swift in Sources */,
+				9BC544A628FE80CF005F39BE /* ExploreMoviesHomeViewController.swift in Sources */,
 				9BC544A228FE80CF005F39BE /* AppDelegate.swift in Sources */,
 				9BC544A428FE80CF005F39BE /* SceneDelegate.swift in Sources */,
-				9BC544C128FE84AF005F39BE /* StaffPicksModel.swift in Sources */,
+				9BC544C128FE84AF005F39BE /* MoviesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

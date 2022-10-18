@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct StaffPicksModel: Codable {
+struct MoviesModel:Codable {
     let rating : Double?
     let id : Int?
     let revenue : Int?
@@ -57,7 +57,9 @@ struct StaffPicksModel: Codable {
         language = try values.decodeIfPresent(String.self, forKey: .language)
         genres = try values.decodeIfPresent([String].self, forKey: .genres)
     }
+
 }
+
 struct Director : Codable {
     let name : String?
     let pictureUrl : String?
