@@ -12,11 +12,15 @@ class MovieDetailsViewController: UIViewController {
     var movie:MoviesModel?
     @IBOutlet weak var favView: UIView!
     @IBOutlet weak var closeView: UIView!
-    @IBOutlet weak var rating: UIView!
     @IBOutlet weak var releseLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var overviewLabel: UILabel!
-
+    @IBOutlet weak var budgetLabel: UILabel!
+    @IBOutlet weak var revenueLabel: UILabel!
+    @IBOutlet weak var langLabel: UILabel!
+    @IBOutlet weak var ratingLabel: UILabel!
+    @IBOutlet weak var directorCollection: UICollectionView!
+    @IBOutlet weak var actorCollection: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         populateData()
@@ -25,7 +29,7 @@ class MovieDetailsViewController: UIViewController {
         self.dismiss(animated:true)
     }
     @objc func fav(tapGestureRecognizer: UITapGestureRecognizer){
-    
+        
     }
 }
 extension MovieDetailsViewController{
@@ -62,6 +66,13 @@ extension MovieDetailsViewController{
         titleLabel.attributedText = newString
         overviewLabel.text = movie?.overview ?? ""
         overviewLabel.textColor = UIColor.loopVeryMedEmphasis
+        
+        let usLocale = Locale(identifier: "en-US") // US
+        budgetLabel.text = movie?.budget?.currency(for: usLocale) ?? "NA"
+        revenueLabel.text = movie?.revenue?.currency(for: usLocale) ?? "NA"
+        langLabel.text = movie?.language ?? "NA"
+        ratingLabel.text  = "\(movie?.rating ?? 0.0)"
+        
         // Do any additional setup after loading the view.
         let tapGestureRecognizerClose = UITapGestureRecognizer(target: self, action: #selector(dismiss(tapGestureRecognizer:)))
         closeView.isUserInteractionEnabled = true
@@ -70,5 +81,14 @@ extension MovieDetailsViewController{
         let tapGestureRecognizerFav = UITapGestureRecognizer(target: self, action: #selector(fav(tapGestureRecognizer:)))
         favView.isUserInteractionEnabled = true
         favView.addGestureRecognizer(tapGestureRecognizerFav)
+        
+        directorCollection.dataSource = self
+        directorCollection.delegate = self
+        
+        actorCollection.dataSource = self
+        actorCollection.delegate = self
+        
+        directorCollection.register(UINib.init(nibName: "ActorDirectorCell", bundle: nil), forCellWithReuseIdentifier: "ActorDirectorCell")
+        actorCollection.register(UINib.init(nibName: "ActorDirectorCell", bundle: nil), forCellWithReuseIdentifier: "ActorDirectorCell")
     }
 }

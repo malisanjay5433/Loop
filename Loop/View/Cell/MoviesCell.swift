@@ -8,8 +8,6 @@
 import UIKit
 
 class MoviesCell: UITableViewCell {
-    
-    
     @IBOutlet weak var bannerImage: ImagePlaceholderLoader!
     @IBOutlet weak var movieNameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -35,10 +33,10 @@ class MoviesCell: UITableViewCell {
 }
 extension UIImageView{
     func loopshadow(){
-        self.layer.shadowOffset = CGSize(width: 0, height: 2)
-        self.layer.shadowColor = UIColor.white.cgColor
-        self.layer.shadowOpacity = 1
-        self.layer.cornerRadius = 10
+        self.layer.shadowOffset = CGSize(width: 2, height: 2)
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOpacity = 1.5
+        self.layer.cornerRadius = 12
         self.layer.masksToBounds = true
     }
 }

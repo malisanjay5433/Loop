@@ -30,3 +30,10 @@ final class Corner: UIView {
     }
 
 }
+class CornerRadius: UIView {
+    override func awakeFromNib() {
+        self.layoutIfNeeded()
+        layer.cornerRadius = 10
+        layer.masksToBounds = true
+    }
+}

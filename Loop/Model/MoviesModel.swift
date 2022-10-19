@@ -9,7 +9,7 @@ import Foundation
 struct MoviesModel:Codable {
     let rating : Double?
     let id : Int?
-    let revenue : Int?
+    let revenue : Float?
     let releaseDate : String?
     let director : Director?
     let posterUrl : String?
@@ -18,7 +18,7 @@ struct MoviesModel:Codable {
     let title : String?
     let overview : String?
     let reviews : Int?
-    let budget : Int?
+    let budget : Float?
     let language : String?
     let genres : [String]?
 
@@ -44,7 +44,7 @@ struct MoviesModel:Codable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         rating = try values.decodeIfPresent(Double.self, forKey: .rating)
         id = try values.decodeIfPresent(Int.self, forKey: .id)
-        revenue = try values.decodeIfPresent(Int.self, forKey: .revenue)
+        revenue = try values.decodeIfPresent(Float.self, forKey: .revenue)
         releaseDate = try values.decodeIfPresent(String.self, forKey: .releaseDate)
         director = try values.decodeIfPresent(Director.self, forKey: .director)
         posterUrl = try values.decodeIfPresent(String.self, forKey: .posterUrl)
@@ -53,7 +53,7 @@ struct MoviesModel:Codable {
         title = try values.decodeIfPresent(String.self, forKey: .title)
         overview = try values.decodeIfPresent(String.self, forKey: .overview)
         reviews = try values.decodeIfPresent(Int.self, forKey: .reviews)
-        budget = try values.decodeIfPresent(Int.self, forKey: .budget)
+        budget = try values.decodeIfPresent(Float.self, forKey: .budget)
         language = try values.decodeIfPresent(String.self, forKey: .language)
         genres = try values.decodeIfPresent([String].self, forKey: .genres)
     }
