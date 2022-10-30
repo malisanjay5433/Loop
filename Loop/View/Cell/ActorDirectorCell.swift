@@ -10,11 +10,11 @@ import UIKit
 class ActorDirectorCell: UICollectionViewCell {
     @IBOutlet weak var backgroundImage: ImagePlaceholderLoader!
     @IBOutlet weak var descriptionLbl: UILabel!
-    static let indetifier = "ActorDirectorCell"
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        backgroundImage.loopshadow()
+        backgroundImage.loopshadow(radius:12)
+        self.backgroundColor = UIColor.clear
     }
     var director : Director?{
         didSet{

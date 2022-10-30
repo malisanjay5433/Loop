@@ -17,14 +17,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKJ-oi-uWZ">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OKJ-oi-uWZ" customClass="Corner" customModule="Loop" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNB-5o-rf8" customClass="Corner" customModule="Loop" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNB-5o-rf8">
                                 <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snackbar" translatesAutoresizingMaskIntoConstraints="NO" id="5go-nn-OeE" customClass="ImagePlaceholderLoader" customModule="Loop" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5go-nn-OeE" customClass="ImagePlaceholderLoader" customModule="Loop" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="RH4-0s-SNw"/>
                                             <constraint firstAttribute="height" constant="150" id="il5-yG-Tvf"/>
@@ -48,7 +49,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="wgb-oe-fjb" secondAttribute="bottom" constant="8" id="6kr-W9-axp"/>
                                     <constraint firstAttribute="bottom" secondItem="5go-nn-OeE" secondAttribute="bottom" id="ORj-34-csP"/>
@@ -60,7 +61,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WNB-5o-rf8" secondAttribute="trailing" id="KO0-xY-UXk"/>
                             <constraint firstItem="WNB-5o-rf8" firstAttribute="top" secondItem="OKJ-oi-uWZ" secondAttribute="top" id="OOH-KY-9nr"/>
@@ -71,7 +72,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="OKJ-oi-uWZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DR7-6O-5kp"/>
                 <constraint firstItem="OKJ-oi-uWZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JV6-iN-LyW"/>
@@ -85,7 +86,4 @@
             <point key="canvasLocation" x="139" y="86"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="Snackbar" width="2560" height="1440"/>
-    </resources>
 </document>

@@ -18,14 +18,13 @@ final class Corner: UIView {
             shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: 12).cgPath
             shadowLayer.fillColor = UIColor.white.cgColor
 
-            shadowLayer.shadowColor = UIColor.darkGray.cgColor
+            shadowLayer.shadowColor = UIColor.gray.cgColor
             shadowLayer.shadowPath = shadowLayer.path
-            shadowLayer.shadowOffset = CGSize(width: 1.5, height: 1.5)
-            shadowLayer.shadowOpacity = 0.8
-            shadowLayer.shadowRadius = 2
-
+            shadowLayer.shadowOffset = CGSize(width: 0.5, height: 0.5)
+            shadowLayer.shadowOpacity = 2.0
+            shadowLayer.shadowRadius = 4
             layer.insertSublayer(shadowLayer, at: 0)
-            //layer.insertSublayer(shadowLayer, below: nil) // also works
+             //layer.insertSublayer(shadowLayer, below: nil) // also works
         }
     }
 
